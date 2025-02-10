@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      color: #333;
+    }
+    .blog-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    .blog-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .blog-header h1 {
+      font-size: 3rem; /* Increased size */
+      margin-bottom: 10px;
+      color: #ffbd39;
+    }
+    .blog-header p.subheading {
+      font-size: 1.5rem; /* Increased size */
+      color: #ccc;
+      margin-top: 0;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .blog-card {
+      background: #ffbd39;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-10px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card-content {
+      padding: 20px;
+    }
+    .blog-card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .blog-card-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .blog-card-content a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .blog-card-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-container">
+    <div class="blog-header">
+      <!-- Back Button -->
+      <a href="index.html" class="back-button">← Back to Home</a>
+      <h1>My Blogs</h1>
+      <p class="subheading">Reflections from my learnings in Data Science</p>
+    </div>
+
+    <div class="blog-cards">
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <img src="images/AI analytics.png" alt="Blog Post 1">
+        <div class="blog-card-content">
+          <h3>AI Paving the Way for Revolutionary Data Analysis</h3>
+          <p>It sometimes feels astounding living in a world where one can see the reflections of our current actions on our future decisions so swiftly. </p>
+          <a href="https://medium.com/@sharmayashaswi4/ai-paving-the-way-for-revolutionary-data-analysis-452e291670fe">Read Blog</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <img src="images/finetune.jpg" alt="Blog Post 2">
+        <div class="blog-card-content">
+          <h3>Mastering Fine-tuning of Generative AI Models 2</h3>
+          <p>Generative AI has been the talk of the town due to its exceptional ability to generate new data and tailor it according to your needs. </p>
+          <a href="https://medium.com/@sharmayashaswi4/mastering-fine-tuning-of-generative-ai-models-c93ff44a3085">Read Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
